@@ -1,0 +1,15 @@
+name: ampq-test
+region: tor
+services:
+- dockerfile_path: Dockerfile
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: yashghatti/springboot-amqp-test
+  http_port: 8080
+  instance_count: 1
+  instance_size_slug: basic-xs
+  name: springboot-amqp-test
+  routes:
+  - path: /
+  source_dir: /
