@@ -9,4 +9,4 @@ EXPOSE 8080/tcp
 
 RUN ls ./build/libs
 
-ENTRYPOINT /opt/java/openjdk/bin/java -jar "./build/libs/amqp-0.0.1-SNAPSHOT"
+ENTRYPOINT /opt/java/openjdk/bin/java -jar "./build/libs/amqp-0.0.1-SNAPSHOT.jar"
